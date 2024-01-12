@@ -8,5 +8,6 @@ export interface Candidate {
     expectedSalary: number;
     nodeJsExperience: number;
     reactJsExperience: number;
+    totalScore: number;
   }
   

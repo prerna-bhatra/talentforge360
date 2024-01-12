@@ -873,6 +873,7 @@ export namespace Prisma {
     expectedSalary: number | null
     nodeJsExperience: number | null
     reactJsExperience: number | null
+    totalScore: number | null
   }
 
   export type CandidateSumAggregateOutputType = {
@@ -880,6 +881,7 @@ export namespace Prisma {
     expectedSalary: number | null
     nodeJsExperience: number | null
     reactJsExperience: number | null
+    totalScore: number | null
   }
 
   export type CandidateMinAggregateOutputType = {
@@ -892,6 +894,7 @@ export namespace Prisma {
     expectedSalary: number | null
     nodeJsExperience: number | null
     reactJsExperience: number | null
+    totalScore: number | null
   }
 
   export type CandidateMaxAggregateOutputType = {
@@ -904,6 +907,7 @@ export namespace Prisma {
     expectedSalary: number | null
     nodeJsExperience: number | null
     reactJsExperience: number | null
+    totalScore: number | null
   }
 
   export type CandidateCountAggregateOutputType = {
@@ -916,6 +920,7 @@ export namespace Prisma {
     expectedSalary: number
     nodeJsExperience: number
     reactJsExperience: number
+    totalScore: number
     _all: number
   }
 
@@ -925,6 +930,7 @@ export namespace Prisma {
     expectedSalary?: true
     nodeJsExperience?: true
     reactJsExperience?: true
+    totalScore?: true
   }
 
   export type CandidateSumAggregateInputType = {
@@ -932,6 +938,7 @@ export namespace Prisma {
     expectedSalary?: true
     nodeJsExperience?: true
     reactJsExperience?: true
+    totalScore?: true
   }
 
   export type CandidateMinAggregateInputType = {
@@ -944,6 +951,7 @@ export namespace Prisma {
     expectedSalary?: true
     nodeJsExperience?: true
     reactJsExperience?: true
+    totalScore?: true
   }
 
   export type CandidateMaxAggregateInputType = {
@@ -956,6 +964,7 @@ export namespace Prisma {
     expectedSalary?: true
     nodeJsExperience?: true
     reactJsExperience?: true
+    totalScore?: true
   }
 
   export type CandidateCountAggregateInputType = {
@@ -968,6 +977,7 @@ export namespace Prisma {
     expectedSalary?: true
     nodeJsExperience?: true
     reactJsExperience?: true
+    totalScore?: true
     _all?: true
   }
 
@@ -1067,6 +1077,7 @@ export namespace Prisma {
     expectedSalary: number
     nodeJsExperience: number
     reactJsExperience: number
+    totalScore: number
     _count: CandidateCountAggregateOutputType | null
     _avg: CandidateAvgAggregateOutputType | null
     _sum: CandidateSumAggregateOutputType | null
@@ -1098,6 +1109,7 @@ export namespace Prisma {
     expectedSalary?: boolean
     nodeJsExperience?: boolean
     reactJsExperience?: boolean
+    totalScore?: boolean
   }, ExtArgs["result"]["candidate"]>
 
   export type CandidateSelectScalar = {
@@ -1110,6 +1122,7 @@ export namespace Prisma {
     expectedSalary?: boolean
     nodeJsExperience?: boolean
     reactJsExperience?: boolean
+    totalScore?: boolean
   }
 
 
@@ -1126,6 +1139,7 @@ export namespace Prisma {
       expectedSalary: number
       nodeJsExperience: number
       reactJsExperience: number
+      totalScore: number
     }, ExtArgs["result"]["candidate"]>
     composites: {}
   }
@@ -1529,6 +1543,7 @@ export namespace Prisma {
     readonly expectedSalary: FieldRef<"Candidate", 'Int'>
     readonly nodeJsExperience: FieldRef<"Candidate", 'Int'>
     readonly reactJsExperience: FieldRef<"Candidate", 'Int'>
+    readonly totalScore: FieldRef<"Candidate", 'Int'>
   }
     
 
@@ -1839,7 +1854,8 @@ export namespace Prisma {
     status: 'status',
     expectedSalary: 'expectedSalary',
     nodeJsExperience: 'nodeJsExperience',
-    reactJsExperience: 'reactJsExperience'
+    reactJsExperience: 'reactJsExperience',
+    totalScore: 'totalScore'
   };
 
   export type CandidateScalarFieldEnum = (typeof CandidateScalarFieldEnum)[keyof typeof CandidateScalarFieldEnum]
@@ -1924,6 +1940,7 @@ export namespace Prisma {
     expectedSalary?: IntFilter<"Candidate"> | number
     nodeJsExperience?: IntFilter<"Candidate"> | number
     reactJsExperience?: IntFilter<"Candidate"> | number
+    totalScore?: IntFilter<"Candidate"> | number
   }
 
   export type CandidateOrderByWithRelationInput = {
@@ -1936,6 +1953,7 @@ export namespace Prisma {
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
+    totalScore?: SortOrder
   }
 
   export type CandidateWhereUniqueInput = Prisma.AtLeast<{
@@ -1951,6 +1969,7 @@ export namespace Prisma {
     expectedSalary?: IntFilter<"Candidate"> | number
     nodeJsExperience?: IntFilter<"Candidate"> | number
     reactJsExperience?: IntFilter<"Candidate"> | number
+    totalScore?: IntFilter<"Candidate"> | number
   }, "id">
 
   export type CandidateOrderByWithAggregationInput = {
@@ -1963,6 +1982,7 @@ export namespace Prisma {
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
+    totalScore?: SortOrder
     _count?: CandidateCountOrderByAggregateInput
     _avg?: CandidateAvgOrderByAggregateInput
     _max?: CandidateMaxOrderByAggregateInput
@@ -1983,6 +2003,7 @@ export namespace Prisma {
     expectedSalary?: IntWithAggregatesFilter<"Candidate"> | number
     nodeJsExperience?: IntWithAggregatesFilter<"Candidate"> | number
     reactJsExperience?: IntWithAggregatesFilter<"Candidate"> | number
+    totalScore?: IntWithAggregatesFilter<"Candidate"> | number
   }
 
   export type CandidateCreateInput = {
@@ -1994,6 +2015,7 @@ export namespace Prisma {
     expectedSalary: number
     nodeJsExperience: number
     reactJsExperience: number
+    totalScore: number
   }
 
   export type CandidateUncheckedCreateInput = {
@@ -2006,6 +2028,7 @@ export namespace Prisma {
     expectedSalary: number
     nodeJsExperience: number
     reactJsExperience: number
+    totalScore: number
   }
 
   export type CandidateUpdateInput = {
@@ -2017,6 +2040,7 @@ export namespace Prisma {
     expectedSalary?: IntFieldUpdateOperationsInput | number
     nodeJsExperience?: IntFieldUpdateOperationsInput | number
     reactJsExperience?: IntFieldUpdateOperationsInput | number
+    totalScore?: IntFieldUpdateOperationsInput | number
   }
 
   export type CandidateUncheckedUpdateInput = {
@@ -2029,6 +2053,7 @@ export namespace Prisma {
     expectedSalary?: IntFieldUpdateOperationsInput | number
     nodeJsExperience?: IntFieldUpdateOperationsInput | number
     reactJsExperience?: IntFieldUpdateOperationsInput | number
+    totalScore?: IntFieldUpdateOperationsInput | number
   }
 
   export type CandidateCreateManyInput = {
@@ -2041,6 +2066,7 @@ export namespace Prisma {
     expectedSalary: number
     nodeJsExperience: number
     reactJsExperience: number
+    totalScore: number
   }
 
   export type CandidateUpdateManyMutationInput = {
@@ -2052,6 +2078,7 @@ export namespace Prisma {
     expectedSalary?: IntFieldUpdateOperationsInput | number
     nodeJsExperience?: IntFieldUpdateOperationsInput | number
     reactJsExperience?: IntFieldUpdateOperationsInput | number
+    totalScore?: IntFieldUpdateOperationsInput | number
   }
 
   export type CandidateUncheckedUpdateManyInput = {
@@ -2064,6 +2091,7 @@ export namespace Prisma {
     expectedSalary?: IntFieldUpdateOperationsInput | number
     nodeJsExperience?: IntFieldUpdateOperationsInput | number
     reactJsExperience?: IntFieldUpdateOperationsInput | number
+    totalScore?: IntFieldUpdateOperationsInput | number
   }
 
   export type IntFilter<$PrismaModel = never> = {
@@ -2102,6 +2130,7 @@ export namespace Prisma {
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
+    totalScore?: SortOrder
   }
 
   export type CandidateAvgOrderByAggregateInput = {
@@ -2109,6 +2138,7 @@ export namespace Prisma {
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
+    totalScore?: SortOrder
   }
 
   export type CandidateMaxOrderByAggregateInput = {
@@ -2121,6 +2151,7 @@ export namespace Prisma {
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
+    totalScore?: SortOrder
   }
 
   export type CandidateMinOrderByAggregateInput = {
@@ -2133,6 +2164,7 @@ export namespace Prisma {
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
+    totalScore?: SortOrder
   }
 
   export type CandidateSumOrderByAggregateInput = {
@@ -2140,6 +2172,7 @@ export namespace Prisma {
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
+    totalScore?: SortOrder
   }
 
   export type IntWithAggregatesFilter<$PrismaModel = never> = {

@@ -116,7 +116,8 @@ exports.Prisma.CandidateScalarFieldEnum = {
   status: 'status',
   expectedSalary: 'expectedSalary',
   nodeJsExperience: 'nodeJsExperience',
-  reactJsExperience: 'reactJsExperience'
+  reactJsExperience: 'reactJsExperience',
+  totalScore: 'totalScore'
 };
 
 exports.Prisma.SortOrder = {
