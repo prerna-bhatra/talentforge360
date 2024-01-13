@@ -60,23 +60,44 @@ router.post('/', async (req: Request, res: Response) => {
         email,
         phone,
         skills,
-        status,
         expectedSalary,
         nodeJsExperience,
         reactJsExperience,
-        totalScore, 
+        totalScore,
       },
     });
 
     res.json(newCandidate);
-    
+
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
 
+router.post('/status/:id', async (req: Request, res: Response) => {
+  try {
+    const {
+      status
+    } = req.body
 
-// Implement other CRUD operations (create, update, delete) as needed
+    const { id } = req.params;
+
+    const updatedCandidate = await prisma.candidate.update({
+      where: {
+        id: parseInt(id, 10),
+      },
+      data: {
+        status,
+      },
+    });
+
+    res.json(updatedCandidate);
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 
 export default router;

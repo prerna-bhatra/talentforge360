@@ -1,9 +1,15 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import cors from 'cors'; // Import cors middleware
+
+
 import candidatesRouter from './routes/candidate';
 
+
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3005;
+
+app.use(cors());
 
 app.use(bodyParser.json());
 

@@ -14,7 +14,7 @@ model Candidate {
   email             String
   phone             String
   skills            String
-  status            String
+  status            String?    
   expectedSalary    Int
   nodeJsExperience  Int
   reactJsExperience Int
