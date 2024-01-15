@@ -15,6 +15,7 @@ model Candidate {
   phone             String
   skills            String
   status            String?    
+  qualification     String?
   expectedSalary    Int
   nodeJsExperience  Int
   reactJsExperience Int

@@ -114,6 +114,7 @@ exports.Prisma.CandidateScalarFieldEnum = {
   phone: 'phone',
   skills: 'skills',
   status: 'status',
+  qualification: 'qualification',
   expectedSalary: 'expectedSalary',
   nodeJsExperience: 'nodeJsExperience',
   reactJsExperience: 'reactJsExperience',

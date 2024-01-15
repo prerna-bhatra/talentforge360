@@ -18,3 +18,5 @@ app.use('/candidates', candidatesRouter);
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+// npx prisma migrate up

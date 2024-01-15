@@ -891,6 +891,7 @@ export namespace Prisma {
     phone: string | null
     skills: string | null
     status: string | null
+    qualification: string | null
     expectedSalary: number | null
     nodeJsExperience: number | null
     reactJsExperience: number | null
@@ -904,6 +905,7 @@ export namespace Prisma {
     phone: string | null
     skills: string | null
     status: string | null
+    qualification: string | null
     expectedSalary: number | null
     nodeJsExperience: number | null
     reactJsExperience: number | null
@@ -917,6 +919,7 @@ export namespace Prisma {
     phone: number
     skills: number
     status: number
+    qualification: number
     expectedSalary: number
     nodeJsExperience: number
     reactJsExperience: number
@@ -948,6 +951,7 @@ export namespace Prisma {
     phone?: true
     skills?: true
     status?: true
+    qualification?: true
     expectedSalary?: true
     nodeJsExperience?: true
     reactJsExperience?: true
@@ -961,6 +965,7 @@ export namespace Prisma {
     phone?: true
     skills?: true
     status?: true
+    qualification?: true
     expectedSalary?: true
     nodeJsExperience?: true
     reactJsExperience?: true
@@ -974,6 +979,7 @@ export namespace Prisma {
     phone?: true
     skills?: true
     status?: true
+    qualification?: true
     expectedSalary?: true
     nodeJsExperience?: true
     reactJsExperience?: true
@@ -1074,6 +1080,7 @@ export namespace Prisma {
     phone: string
     skills: string
     status: string | null
+    qualification: string | null
     expectedSalary: number
     nodeJsExperience: number
     reactJsExperience: number
@@ -1106,6 +1113,7 @@ export namespace Prisma {
     phone?: boolean
     skills?: boolean
     status?: boolean
+    qualification?: boolean
     expectedSalary?: boolean
     nodeJsExperience?: boolean
     reactJsExperience?: boolean
@@ -1119,6 +1127,7 @@ export namespace Prisma {
     phone?: boolean
     skills?: boolean
     status?: boolean
+    qualification?: boolean
     expectedSalary?: boolean
     nodeJsExperience?: boolean
     reactJsExperience?: boolean
@@ -1136,6 +1145,7 @@ export namespace Prisma {
       phone: string
       skills: string
       status: string | null
+      qualification: string | null
       expectedSalary: number
       nodeJsExperience: number
       reactJsExperience: number
@@ -1540,6 +1550,7 @@ export namespace Prisma {
     readonly phone: FieldRef<"Candidate", 'String'>
     readonly skills: FieldRef<"Candidate", 'String'>
     readonly status: FieldRef<"Candidate", 'String'>
+    readonly qualification: FieldRef<"Candidate", 'String'>
     readonly expectedSalary: FieldRef<"Candidate", 'Int'>
     readonly nodeJsExperience: FieldRef<"Candidate", 'Int'>
     readonly reactJsExperience: FieldRef<"Candidate", 'Int'>
@@ -1852,6 +1863,7 @@ export namespace Prisma {
     phone: 'phone',
     skills: 'skills',
     status: 'status',
+    qualification: 'qualification',
     expectedSalary: 'expectedSalary',
     nodeJsExperience: 'nodeJsExperience',
     reactJsExperience: 'reactJsExperience',
@@ -1945,6 +1957,7 @@ export namespace Prisma {
     phone?: StringFilter<"Candidate"> | string
     skills?: StringFilter<"Candidate"> | string
     status?: StringNullableFilter<"Candidate"> | string | null
+    qualification?: StringNullableFilter<"Candidate"> | string | null
     expectedSalary?: IntFilter<"Candidate"> | number
     nodeJsExperience?: IntFilter<"Candidate"> | number
     reactJsExperience?: IntFilter<"Candidate"> | number
@@ -1958,6 +1971,7 @@ export namespace Prisma {
     phone?: SortOrder
     skills?: SortOrder
     status?: SortOrderInput | SortOrder
+    qualification?: SortOrderInput | SortOrder
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
@@ -1974,6 +1988,7 @@ export namespace Prisma {
     phone?: StringFilter<"Candidate"> | string
     skills?: StringFilter<"Candidate"> | string
     status?: StringNullableFilter<"Candidate"> | string | null
+    qualification?: StringNullableFilter<"Candidate"> | string | null
     expectedSalary?: IntFilter<"Candidate"> | number
     nodeJsExperience?: IntFilter<"Candidate"> | number
     reactJsExperience?: IntFilter<"Candidate"> | number
@@ -1987,6 +2002,7 @@ export namespace Prisma {
     phone?: SortOrder
     skills?: SortOrder
     status?: SortOrderInput | SortOrder
+    qualification?: SortOrderInput | SortOrder
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
@@ -2008,6 +2024,7 @@ export namespace Prisma {
     phone?: StringWithAggregatesFilter<"Candidate"> | string
     skills?: StringWithAggregatesFilter<"Candidate"> | string
     status?: StringNullableWithAggregatesFilter<"Candidate"> | string | null
+    qualification?: StringNullableWithAggregatesFilter<"Candidate"> | string | null
     expectedSalary?: IntWithAggregatesFilter<"Candidate"> | number
     nodeJsExperience?: IntWithAggregatesFilter<"Candidate"> | number
     reactJsExperience?: IntWithAggregatesFilter<"Candidate"> | number
@@ -2020,6 +2037,7 @@ export namespace Prisma {
     phone: string
     skills: string
     status?: string | null
+    qualification?: string | null
     expectedSalary: number
     nodeJsExperience: number
     reactJsExperience: number
@@ -2033,6 +2051,7 @@ export namespace Prisma {
     phone: string
     skills: string
     status?: string | null
+    qualification?: string | null
     expectedSalary: number
     nodeJsExperience: number
     reactJsExperience: number
@@ -2045,6 +2064,7 @@ export namespace Prisma {
     phone?: StringFieldUpdateOperationsInput | string
     skills?: StringFieldUpdateOperationsInput | string
     status?: NullableStringFieldUpdateOperationsInput | string | null
+    qualification?: NullableStringFieldUpdateOperationsInput | string | null
     expectedSalary?: IntFieldUpdateOperationsInput | number
     nodeJsExperience?: IntFieldUpdateOperationsInput | number
     reactJsExperience?: IntFieldUpdateOperationsInput | number
@@ -2058,6 +2078,7 @@ export namespace Prisma {
     phone?: StringFieldUpdateOperationsInput | string
     skills?: StringFieldUpdateOperationsInput | string
     status?: NullableStringFieldUpdateOperationsInput | string | null
+    qualification?: NullableStringFieldUpdateOperationsInput | string | null
     expectedSalary?: IntFieldUpdateOperationsInput | number
     nodeJsExperience?: IntFieldUpdateOperationsInput | number
     reactJsExperience?: IntFieldUpdateOperationsInput | number
@@ -2071,6 +2092,7 @@ export namespace Prisma {
     phone: string
     skills: string
     status?: string | null
+    qualification?: string | null
     expectedSalary: number
     nodeJsExperience: number
     reactJsExperience: number
@@ -2083,6 +2105,7 @@ export namespace Prisma {
     phone?: StringFieldUpdateOperationsInput | string
     skills?: StringFieldUpdateOperationsInput | string
     status?: NullableStringFieldUpdateOperationsInput | string | null
+    qualification?: NullableStringFieldUpdateOperationsInput | string | null
     expectedSalary?: IntFieldUpdateOperationsInput | number
     nodeJsExperience?: IntFieldUpdateOperationsInput | number
     reactJsExperience?: IntFieldUpdateOperationsInput | number
@@ -2096,6 +2119,7 @@ export namespace Prisma {
     phone?: StringFieldUpdateOperationsInput | string
     skills?: StringFieldUpdateOperationsInput | string
     status?: NullableStringFieldUpdateOperationsInput | string | null
+    qualification?: NullableStringFieldUpdateOperationsInput | string | null
     expectedSalary?: IntFieldUpdateOperationsInput | number
     nodeJsExperience?: IntFieldUpdateOperationsInput | number
     reactJsExperience?: IntFieldUpdateOperationsInput | number
@@ -2155,6 +2179,7 @@ export namespace Prisma {
     phone?: SortOrder
     skills?: SortOrder
     status?: SortOrder
+    qualification?: SortOrder
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
@@ -2176,6 +2201,7 @@ export namespace Prisma {
     phone?: SortOrder
     skills?: SortOrder
     status?: SortOrder
+    qualification?: SortOrder
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
@@ -2189,6 +2215,7 @@ export namespace Prisma {
     phone?: SortOrder
     skills?: SortOrder
     status?: SortOrder
+    qualification?: SortOrder
     expectedSalary?: SortOrder
     nodeJsExperience?: SortOrder
     reactJsExperience?: SortOrder
